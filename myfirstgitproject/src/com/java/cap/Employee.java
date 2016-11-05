@@ -1,6 +1,6 @@
 package com.java.cap;
 
-public class Employee {
+public class Employee implements Comparable<Employee>{
 	private int id;
 	private String name;
 	private String city;
@@ -29,6 +29,11 @@ public class Employee {
 	}
 	public void setSalary(int salary) {
 		this.salary = salary;
+	}
+	@Override
+	public int compareTo(Employee o) {
+		
+		return this.getId() - o.getId();
 	}
 	
 	
