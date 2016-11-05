@@ -6,6 +6,12 @@ public class Employee implements Comparable<Employee>{
 	private String city;
 	private int salary;
 	
+	public Employee(int id,String name, String city, int salary) {
+		this.id = id;
+		this.name = name;
+		this.city = city;
+		this.salary = salary;
+	}
 	public int getId() {
 		return id;
 	}
